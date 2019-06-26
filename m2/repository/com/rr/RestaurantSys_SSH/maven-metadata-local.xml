@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.rr</groupId>
+  <artifactId>RestaurantSys_SSH</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20161230023340</lastUpdated>
+  </versioning>
+</metadata>

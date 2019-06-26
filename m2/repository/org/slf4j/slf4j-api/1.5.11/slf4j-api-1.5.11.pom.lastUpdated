@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Dec 21 11:40:50 CST 2017
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1513827650891
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.slf4j\:slf4j-api\:pom\:1.5.11 from/to central (https\://repo.maven.apache.org/maven2)\: connect timed out

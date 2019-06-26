@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.rr</groupId>
+  <artifactId>RestaurantSys_SSH</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>RestaurantSys_SSH Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <!-- spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>3.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>3.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>3.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>3.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>3.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>3.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>3.2.5.RELEASE</version>
+        </dependency>
+        
+        <!-- hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.3.11.Final</version>
+        </dependency>
+        
+        <!-- struts2 -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+              <artifactId>struts2-core</artifactId>
+              <version>2.3.28.1</version>
+              <!-- 这里的 exclusions 是排除包，因为 Struts2中有javassist，Hibernate中也有javassist,
+                所以如果要整合Hibernate，一定要排除掉Struts2中的javassist，否则就冲突了。-->
+              <exclusions>
+                <exclusion>
+                    <groupId>javassist</groupId>
+                    <artifactId>javassist</artifactId>
+                </exclusion>
+              </exclusions> 
+        </dependency>
+        
+        <!-- Struts2和Spring整合插件 -->
+         <dependency>
+             <groupId>org.apache.struts</groupId>
+             <artifactId>struts2-spring-plugin</artifactId>
+             <version>2.3.28.1</version>
+         </dependency>
+         
+         <!-- 连接池包 -->
+  		<dependency>
+    		<groupId>c3p0</groupId>
+    		<artifactId>c3p0</artifactId>
+    		<version>0.9.1.2</version>
+    	</dependency>
+    	
+    	<!-- mysql -->
+    	<dependency>
+        	<groupId>mysql</groupId>
+        	<artifactId>mysql-connector-java</artifactId>
+        	<version>5.1.30</version>
+    	</dependency>
+  </dependencies>
+  <build>
+    <finalName>RestaurantSys_SSH</finalName>
+  </build>
+</project>

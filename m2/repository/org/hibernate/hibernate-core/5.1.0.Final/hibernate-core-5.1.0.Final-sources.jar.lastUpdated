@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Aug 28 17:56:33 CST 2018
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1535450193516
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.hibernate\:hibernate-core\:jar\:sources\:5.1.0.Final from/to central (https\://repo.maven.apache.org/maven2)\: connect timed out
